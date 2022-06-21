@@ -1,0 +1,6 @@
+<div class="post-container">
+    <div infiniteScroll [infiniteScrollThrottle]="2000" (scrolled)="onScroll()">
+        <app-post *ngFor="let post of posts" [post]="post">
+        </app-post>
+    </div>
+</div>

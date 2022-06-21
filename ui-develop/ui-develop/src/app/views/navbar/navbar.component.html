@@ -1,0 +1,28 @@
+<div class="navbar-container">
+
+    <a routerLink="/landing">
+        <button class="logobtn"></button>
+        <div class="logo">
+            <div class="logo-container">
+                <div class="out-logo">
+                    <div class="in-logo"></div>
+                    <div class="small-square"></div>
+                </div>
+            </div>
+            <div class="line"></div>
+            <div class="pixelgram">Pixelgram</div>
+        </div>
+    </a>
+
+    <input *ngIf="router.url === '/landing'" type="text" class="search-bar" placeholder="🔍︎ Search">
+
+    <div class="dropdown" *ngIf="router.url === '/landing'" >
+        <button class="dropbtn"></button>
+        <div class="dropdown-content" *ngIf="checkCookie() !== null">
+            <a routerLink="/login" (click)="cleanAuthToken()">Logout</a>
+        </div>
+        <div class="dropdown-content" *ngIf="checkCookie() === null">
+            <a routerLink="/login">Login</a>
+        </div>
+    </div>
+</div>

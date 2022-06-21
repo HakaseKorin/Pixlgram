@@ -1,0 +1,141 @@
+@import url('http://fonts.cdnfonts.com/css/billabong');
+
+.ShadowBox {
+  position: fixed;
+  left: 0;
+  top:77px;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #FAFAFA;
+
+}
+
+.Box {
+  margin: 0;
+  transform: translateY(25%);
+  display: flex;
+  justify-content: center;
+  background-color: #FAFAFA;
+  height: 65%;
+}
+
+.loginBox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border: 1px solid #E6E6E6;
+  background-color: #FFFFFF;
+  width: 50%;
+  height: 587px;
+}
+
+.loginBox .BoxWrapper{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 616px;
+}
+
+.loginBox .BoxTitle{
+  margin-top: 64px;
+}
+
+.loginBox .BoxContent{
+  padding: 15px 20px 10px 20px;
+
+}
+
+.textInput{
+  width: 524px;
+  height: 57px;
+  margin-top: 43px;
+  padding-left: 18px;
+
+}
+
+input[type=text]{
+  padding-left: 18px;
+}
+
+.buttons{
+  margin-top: 73px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+button{
+  background-color: #5197E9;
+  border: none;
+  border-radius: 3px;
+  padding: 14px 40px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  margin-left: 45px;
+  width: 118px;
+}
+
+a{
+  align-self: center;
+  text-decoration: none;
+  color: #252525;
+}
+
+.TestTitle{
+  font-size: 45px;
+  font-family: 'Billabong', sans-serif;
+}
+
+.separator{
+  font-size: 45px;
+  font-weight:lighter;
+  margin-left: 26px;
+  margin-right: 20px;
+}
+
+.alert {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 100%;
+  letter-spacing: 0.025em;
+  color: #CB5B5B;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo-box {
+  height: 53px;
+  width: 53px;
+
+  border: 5px solid #262626;
+  box-sizing: border-box;
+}
+
+.logo-box-inner {
+  height: 22.26px;
+  width: 22.26px;
+
+  margin-top: 3px;
+  margin-left: 11.25px;
+
+  background: #262626;
+}
+
+.logo-box-lens {
+  height: 5.3px;
+  width: 5.3px;
+
+  margin-top: 3px;
+  margin-left: 35px;
+
+  background: #262626;
+}

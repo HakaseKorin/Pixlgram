@@ -1,0 +1,168 @@
+@import url('http://fonts.cdnfonts.com/css/billabong');
+
+.navbar-container {
+    height: 75px;
+    position: fixed;
+    display: flex;
+    z-index: 2;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.09);
+}
+
+.logobtn {
+    width:190px;
+    height:40px;
+    position: absolute;
+    left: 16.5%;
+    top: 25%;
+    background-color: transparent;
+    border: transparent;
+    cursor:pointer;
+}
+
+.logo-container {
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    left: 17.5%;
+    top: 29.33%;
+}
+
+.out-logo {
+    width: 30px;
+    height: 29px;
+    position: relative;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    border: 3.5px solid #262626;
+    box-sizing: border-box;
+}
+
+.in-logo {
+    width: 12.11px;
+    height: 12.18px;
+    position: absolute;
+    left: 25.5%;
+    right: 0%;
+    top: 22.5%;
+    bottom: 0%;
+    background: #262626;
+}
+
+.small-square {
+    width: 2.9px;
+    height: 2.9px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    background: #262626;
+
+}
+
+.line {
+    width: .5px;
+    height: 33px;
+    position: absolute;
+    left: 21.3%;
+    right: 0%;
+    top: 27.42%;
+    bottom: 28.58%;
+    background: #2a2a2a;
+}
+
+.pixelgram {
+    width: 83px;
+    height: 25px;
+
+    position: absolute;
+    left: 23.06%;
+    right: 71.18%;
+    top: 36%;
+    bottom: 30.67%;
+
+    font-family: 'Billabong', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: 0.025em;
+
+    color: #262626;
+}
+
+.search-bar {
+    width: 210.39px;
+    height: 28.12px;
+    border-radius: 3px;
+
+    position: absolute;
+    left: 42.95%;
+    right: 42.44%;
+    top: 30.68%;
+    bottom: 31.83%;
+
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+
+    text-align: center;
+    font-family: 'Roboto', serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.dropdown {
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    right: 17.35%;
+    top: 28%;
+    background: url("src/assets/img/d72dcf68ab6a.png");
+}
+
+.dropbtn {
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: transparent;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #FFFFFF;
+    min-width: 102px;
+    min-height: 47px;
+    right: 0;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+.dropdown-content a {
+    margin:0;
+    color: black;
+    min-width:102px;
+    position:absolute;
+    text-decoration: none;
+    min-height: 35px;
+    max-height: 47px;
+    padding-top: 12%;
+    text-align: center;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: transparent;
+}

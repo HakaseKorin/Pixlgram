@@ -1,0 +1,30 @@
+<div class="main-div">
+    <mat-card class="post-card">
+        <div class="post-header">
+            <img class="user-header-image" *ngIf="!post.user.profileImg" alt="">
+            <img class="profile-image" src="{{post.user.profileImg}}" *ngIf="post.user.profileImg" alt="" onerror="this.src='https://i.imgur.com/jrCh0uI.png';">
+            <h2 class="title"> <a class="username">{{post.user.username}}</a> </h2>
+            <button class="dot-button"></button>
+        </div>
+        <img class="image" src="{{post.img}}" alt="{{post.description}}">
+        <div class="content">
+            <button class="heart-icon"></button>
+            <a class="likes-counter"> 12 likes</a>
+            <a class="comments-counter"> {{post.comments.totalElements}} comments</a>
+            <p style="margin-bottom: 0px; margin-top: 0px;">
+                <a class="username"> {{post.user.username}}</a> {{post.description}}
+            </p>
+            <button *ngIf="post.comments.totalElements > pageSize" class="view-comments-button"
+                (click)="loadComments()">{{commentDisplayButtonText}}</button>
+            <ul class="comments-container" *ngFor="let comment of post.comments.items">
+                <li><p class="body"><a class="username">{{comment.username}} </a> {{comment.body}}</p></li>
+            </ul>
+            <div class="upload-comment-container">
+                <input class="text-box" type="text" placeholder="Add a comment...">
+                <button class="upload-button"></button>
+            </div>
+        </div>
+    </mat-card>
+</div>
+
+<div class="separator"></div>

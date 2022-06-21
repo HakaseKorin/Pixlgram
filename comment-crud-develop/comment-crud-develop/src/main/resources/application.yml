@@ -1,0 +1,30 @@
+# Anything that goes here is made globally for all profiles.
+spring:
+  application:
+    name: comment-crud
+
+---
+# Anything that goes here is made specifically for clouds's profile.
+# Cloud is the default profile that Google Clound Foundry makes your application use if you do not override it.
+spring:
+  profiles: cloud
+
+
+---
+# Anything that goes here is made specifically for local's profile.
+spring:
+  profiles: local,default
+  datasource:
+    url: jdbc:h2:mem:testdb
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+server:
+  port: 8080
+
+---
+settings:
+  cors_origin: http://35.223.84.44

@@ -1,0 +1,40 @@
+<div class="ShadowBox">
+  <div class="Box">
+    <div class="loginBox">
+      <div class="BoxWrapper">
+        <div class="BoxTitle">
+          <div class="logo" href="#">
+            <div class="logo-box">
+              <div class="logo-box-lens"></div>
+              <div class="logo-box-inner"></div>
+            </div>
+            <span class="separator">|</span>
+            <span class="TestTitle">Login</span>
+          </div>
+        </div>
+        <div class="BoxContent">
+          <form>
+            <div class="LoginFormInput">
+              <input class="username textInput" name="username" placeholder="Username" [(ngModel)]="username"
+                (blur)="checkUser()" (keyup)="checkFields()" />
+              <p class="alert" [hidden]="!usernameError">*Username is required</p>
+            </div>
+            <div class="LoginFormInput">
+              <input type="password" class="password textInput" name="password" placeholder="Password" [(ngModel)]="password"
+                (blur)="checkPass()" (keyup)="checkFields()" />
+              <p class="alert" [hidden]="!passwordError">*Password is required</p>
+            </div>
+            <p class="alert" [hidden]="!loginError">*Username or Password is incorrect</p>
+
+            <div class="buttons">
+              <a href="/register">Register</a>
+              <button type="submit" class="LoginButton" (click)="login()" [disabled]="!areFieldsFilled">
+                Login
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

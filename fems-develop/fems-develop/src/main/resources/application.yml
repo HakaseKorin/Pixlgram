@@ -1,0 +1,36 @@
+# Anything that goes here is made globally for all profiles.
+spring:
+  application:
+    name: fems
+
+---
+# Anything that goes here is made specifically for clouds's profile.
+# Cloud is the default profile that Google Clound Foundry makes your application use if you do not override it.
+spring:
+  profiles: cloud, default
+  servlet:
+    multipart:
+      max-file-size: 5MB
+
+server:
+  port: 8080
+
+settings:
+  cors_origin: http://34.133.41.15
+  test_origin: http://localhost:4200
+  crud_origin: http://130.211.118.68
+  user_crud_origin: http://34.70.31.134
+  comment_crud_origin: http://34.72.94.7
+  imgur_client_id: a639ee7e3270207
+  imgur_client_secret: 33abf56448042a5b8ace63b99c07393c8a79e8a1
+  imgur_access_token: 4f1c09177a88a39a9a7c3f96e5c6189efb6777aa
+  imgur_upload: https://api.imgur.com/3/upload
+  issuer: https://enablement-keycloak.work.cognizant.studio/auth/realms/Enablement
+  
+---
+# Anything that goes here is made specifically for local's profile.
+spring:
+  profiles: local
+
+
+
